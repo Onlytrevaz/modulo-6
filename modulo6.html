@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="modulo6.css">
+<title>Modulo 6 tarefa</title>
+</head>
+<body>
+<h1>Tarefa do módulo 5</h1>
+<p>Checar se um valor é ou não maior que o outro a partir de uma inserção.</p>
+<form id="formulário">
+<label for="campoA">Campo A:</label>
+<input type="number" id="campoA" name="campoA" required>
+
+<label for="campoB">Campo B:</label>
+<input type="number" id="campoB" name="campoB" required>
+<button type="submit">Enviar</button>
+
+<script>
+document.getElementById("formulário").addEventListener("submit", function(event) {
+event.preventDefault(); 
+
+var campoA = document.getElementById("campoA").value;
+var campoB = document.getElementById("campoB").value;
+
+if (parseInt(campoB) > parseInt(campoA)) {
+alert("UAU! Você conseguiu pensar em número que fosse maior que o outro! Você deve ser um gênio ou algo assim...");
+event.preventDefault(); }
+
+if (parseInt(campoB) < parseInt(campoA)) {
+alert("Acho que você não entendeu bem, é pra colocar um numero menor na esquerda e um maior na direita.");
+event.preventDefault(); 
+}
+});
+</script>
+</form>
+<p>Dúvido você colocar um número no <span style="color: rgb(230, 92, 115);">Campo A </span> que seja <span style="color: rgb(230, 92, 115);">menor</span> que o do <span style="color: rgb(230, 92, 115);">Campo B</span>.</p>
+</body>
+</html>
