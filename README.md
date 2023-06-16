@@ -1,2 +1,2 @@
-# modulo 6
- atividades do modulo 6 de calcular coisas eu acho, dps eu confiro
+# modulo 7
+ atividades do modulo 7 de calcular coisas eu acho, dps eu confiro
